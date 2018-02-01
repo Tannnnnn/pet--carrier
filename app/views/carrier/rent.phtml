@@ -1,0 +1,103 @@
+<div class="container">
+      <div class="card mt-4">
+          <div class="card-block">
+            <div class="row">
+              <div class="col-md-3 ml-5 mt-4">
+                <figure class="profileRent">
+                    <img src="<?=$carrier->img?>"  class="profile-avatar-rent" alt="">
+                </figure>
+
+              </div>
+              <div class="col-md-8">
+                <h4 class="card-title mt-3"><?=$carrier->firstname?> <?=$carrier->lastname?></h4>
+                <div class="meta">
+                  <p>เชี่ยวชาญในด้าน : <?=$carrier->skill?> </p>
+                  <p>ประจำเขตพื้นที่  : <?=$carrier->city?> , <?=$carrier->province?></p>
+                  <p>เบอร์โทรศัพท์   : <?=$carrier->phone?> </p>
+                  <p>อายุ : <?=$carrier->age?> </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-block">
+            <label for="" class="card-title">กรุณากรอกข้อมูล</label>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="input-group input-group-md">
+                  <span class="input-group-addon" id="sizing-addon1">ชื่อ</span>
+                  <?=$this->tag->textField( [ "fname", "class" => "form-control","placeholder" => "กรุณากรอกชื่อ", "required"=>"","autofocus"=>""] );?>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group input-group-md">
+                  <span class="input-group-addon" id="sizing-addon1">นามสกุล</span>
+                  <?=$this->tag->textField( [ "lname", "class" => "form-control","placeholder" => "กรุณากรอกนามสกุล", "required"=>"","autofocus"=>""] );?>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <div class="input-group input-group-sm">
+                  <span class="input-group-addon" id="sizing-addon1">วันเริ่มต้น</span>
+                  <input type="date" class="form-control"  aria-describedby="sizing-addon1" name="start" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group input-group-sm">
+                  <span class="input-group-addon" id="sizing-addon1">วันสิ้นสุด</span>
+                  <input type="date" class="form-control"  aria-describedby="sizing-addon1" name="end" required>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <div class="input-group input-group-md">
+                  <span class="input-group-addon" id="sizing-addon1">ชื่อสัตว์เลี้ยง</span>
+                  <input type="text" class="form-control" placeholder="กรุณากรอกชื่อสัตว์เลี้ยง" aria-describedby="sizing-addon1" name="pname" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group input-group-md">
+                  <span class="input-group-addon" id="sizing-addon1">ประเภทสัตว์เลี้ยง</span>
+                  <select class="custom-select" name="ptype">
+                    <option selected>กรุณาเลือกประเภทสัตว์เลี้ยง</option>
+                    <option value="แมว">แมว</option>
+                    <option value="สุนัข">สุนัข</option>
+                    <option value="กระต่าย">กระต่าย</option>
+                    <option value="ปลา">ปลา</option>
+                    <option value="นก">นก</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <div class="input-group input-group-md">
+                  <span class="input-group-addon" id="sizing-addon1">สายพันธุ์</span>
+                  <input type="text" class="form-control"  aria-describedby="sizing-addon1" name="pdegree" required placeholder="กรุณากรอกข้อมูลสายพันธุ์">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group input-group-md">
+                  <span class="input-group-addon" id="sizing-addon1">เบอร์โทรติดต่อ</span>
+                  <input type="text" class="form-control"  aria-describedby="sizing-addon1" name="phone" required placeholder="กรุณากรอกเบอร์โทรติดต่อ">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="row">
+              <div class="col-md-4">
+                <a href="#" class="btn btn-success" type="submit">ยืนยัน</a>
+              </div>
+              <div class="col-md-8 text-right">
+                <label for="">ราคาทั้งหมด : 500 บาท</label>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+<script type="text/javascript">
+
+</script>

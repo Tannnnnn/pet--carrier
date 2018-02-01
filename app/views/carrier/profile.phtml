@@ -1,0 +1,23 @@
+<div class="container">
+      <div class="card mt-4">
+          <div class="">
+            <img class="card-img-top " src="https://www.img.in.th/images/64b417126709edd3deb235a2648e13a6.jpg" width="100%">
+          </div>
+          <div class="card-block">
+              <figure class="profile">
+                  <img src="<?=$carrier->img?>" width="30px" class="profile-avatar" alt="">
+              </figure>
+              <h4 class="card-title mt-3"><?=$carrier->firstname?> <?=$carrier->lastname?></h4>
+              <div class="meta">
+                <p>เชี่ยวชาญในด้าน : <?=$carrier->skill?> </p>
+                <p>ประจำเขตพื้นที่  : <?=$carrier->city?> , <?=$carrier->province?></p>
+                <p>เบอร์โทรศัพท์   : <?=$carrier->phone?> </p>
+                <p>อายุ : <?=$carrier->age?> </p>
+              </div>
+
+          </div>
+          <div class="card-footer">
+              <a href="<?=$this->url->get('carrier/rent/'.$carrier->id)?>" class="btn btn-success" type="submit">เลือก</a>
+          </div>
+      </div>
+  </div>
